@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="b406-cce5-5518-e635" name="Seraphon - Starscale Warhost [Spearhead]" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="45" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Seraphon - Library" id="9e73-112f-2d37-6f0a" targetId="18f-620a-1c2f-b6b2"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Saurus Oldblood on Carnosaur (Spearhead)" hidden="false" id="448b-9216-c6dc-359b" type="selectionEntry" targetId="b9e8-f89c-f528-453c">
+      <modifiers>
+        <modifier type="set-primary" value="d1f3-921c-b403-1106" field="category" scope="root-entry">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d1f3-921c-b403-1106" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="376a-6b97-8699-dd59" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Saurus Warriors (Spearhead)" hidden="false" id="20e5-f808-03df-c42e" type="selectionEntry" targetId="0ef2-0b67-21f8-6fb1"/>
+    <entryLink import="true" name="Kroxigor (Spearhead)" hidden="false" id="d0cd-6fbd-4a0e-3a1a" type="selectionEntry" targetId="33f0-a186-b2e6-a42c"/>
+  </entryLinks>
+</catalogue>
