@@ -8334,6 +8334,7 @@
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="0b12-39bb-60bd-7e19" targetId="676-2b78-7bbf-ba9c"/>
         <categoryLink name="Reference" hidden="false" id="a373-5771-b9d5-b463" targetId="3360-1158-e879-9606"/>
+        <categoryLink name="Army Composition" hidden="false" id="16fc-315c-4a3c-db6f" targetId="ac97-b27c-7e35-7ab9"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="To add units to your roster, you need to add a regiment. These can be added under the Forces selector - select your top-level force for your army and then click the + on mobile or check the sidebar panel on desktop." field="error">

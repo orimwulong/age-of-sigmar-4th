@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="18f-620a-1c2f-b6b2" name="Seraphon - Library" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="2" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="18f-620a-1c2f-b6b2" name="Seraphon - Library" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="2" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Bastiladon with Solar Engine" hidden="false" id="4fee-26df-ea45-a2d6" publicationId="e9d0-a23-6a15-1fcb">
       <categoryLinks>
@@ -4296,6 +4296,240 @@ Cover, Unstable**</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Saurus Warriors (Spearhead)" hidden="false" id="0ef2-0b67-21f8-6fb1" publicationId="e9d0-a23-6a15-1fcb">
+      <profiles>
+        <profile name="Saurus Warriors" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="84cc-0cd4-ff60-b98d">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ordered Cohorts" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="33c5-e28b-4228-47bc">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to save rolls for this unit while it is contesting an objective you control.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="50fe-4f29-6bc3-dcc6" name="Color">Green</attribute>
+            <attribute typeId="bf11-4e10-3ab1-06f4" name="Type">Defensive</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="INFANTRY" hidden="false" id="5a17-671f-ad56-14f5" targetId="75d6-6995-dfcc-3898" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‎" id="6426-addf-dfa8-6a2d" hidden="false" typeId="1dd2-2af7-76a2-2423" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Saurus Warrior" hidden="false" id="6f05-98bf-ed5a-3f0f" defaultAmount="">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ded7-c4e2-e1e6-a784"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="4168-e6a4-0fd6-4c8b"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Celestite Club" hidden="false" id="82f9-c22a-77a5-0e9c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff84-ce27-d1ec-4b23"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6b1-385b-799d-2479"/>
+              </constraints>
+              <profiles>
+                <profile name="Celestite Club" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="1d1a-40a9-de93-8b53">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="increment" value="5" field="ded7-c4e2-e1e6-a784">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="5" field="4168-e6a4-0fd6-4c8b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="b52a-0d0d-8a42-92c6" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kroxigor (Spearhead)" hidden="false" id="33f0-a186-b2e6-a42c" publicationId="e9d0-a23-6a15-1fcb">
+      <profiles>
+        <profile name="Kroxigor" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="2db7-1eae-0de9-4bdf">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">6</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Brutal Blows" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="5234-ba45-d75d-c229">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">This unit’s melee weapons have **^^Crit (2 Hits)^^** if the target unit has 5 or more models.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="50fe-4f29-6bc3-dcc6" name="Color">Red</attribute>
+            <attribute typeId="bf11-4e10-3ab1-06f4" name="Type">Offensive</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Kroxigor" hidden="false" id="e156-99ae-4080-2aab" defaultAmount="" collective="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Drakebite Maul" hidden="false" id="0f35-3bac-9f51-b29e" defaultAmount="0,1">
+              <profiles>
+                <profile name="Drakebite Maul" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="d75c-429c-322f-d850">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">4</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">2+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2f8-48c5-11fa-ec7c" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d316-5253-5b9f-6573" automatic="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8638-063d-27f7-38f7-min" automatic="true"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8638-063d-27f7-38f7-max" automatic="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="INFANTRY" hidden="false" id="84a9-82df-8318-cb0c" targetId="75d6-6995-dfcc-3898" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bd06-8c26-8ea2-1431" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Saurus Oldblood on Carnosaur (Spearhead)" hidden="false" id="b9e8-f89c-f528-453c" publicationId="e9d0-a23-6a15-1fcb">
+      <categoryLinks>
+        <categoryLink name="HERO" hidden="false" id="0df2-aee0-4761-5bfa" targetId="6e72-1656-d554-528a" primary="true"/>
+        <categoryLink name="MONSTER" hidden="false" id="1397-17c4-1d51-e158" targetId="6d54-625c-d063-13e2" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="215b-c1ee-6ed0-1114" type="selectionEntry" targetId="a56b-952e-ad15-7868"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Saurus Oldblood on Carnosaur" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false" id="b50d-e92f-cec8-fb13">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">10&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">14</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Battle Damaged" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="c822-8842-a2ad-3135">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While this unit has 10 or more damage points, the Attacks characteristic of its **Carnosaur’s Massive Jaws** is 1.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="50fe-4f29-6bc3-dcc6" name="Color">Black</attribute>
+            <attribute typeId="bf11-4e10-3ab1-06f4" name="Type">Damage</attribute>
+          </attributes>
+        </profile>
+        <profile name="Ancient Warlord" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="1d59-40fd-75b9-e426">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit wholly within 12&quot; of this unit to be the target. You cannot pick this unit.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Until the start of your next turn, add 1 to charge rolls for the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Yellow</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Movement</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Saurus Oldblood on Carnosaur" hidden="false" id="7291-d6be-7608-4ec0">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sunbolt Gauntlet" hidden="false" id="7d89-4118-d7f4-cf16">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e308-6e4d-9f04-d837"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="770a-1bce-085c-87da"/>
+              </constraints>
+              <profiles>
+                <profile name="Sunbolt Gauntlet" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false" id="1285-4fbf-2a05-4aaf">
+                  <characteristics>
+                    <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
+                    <characteristic name="Atk" typeId="aa17-4296-2887-e05d">D6</characteristic>
+                    <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+                    <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+                    <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+                    <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+                    <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Relic Celestite Weapon" hidden="false" id="b4d7-c7df-63f4-55ff">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11a4-a3df-2758-44e2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2e6-cde7-e16c-d86d"/>
+              </constraints>
+              <profiles>
+                <profile name="Relic Celestite Weapon" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="a9a2-dfdd-86d4-bc3e">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Carnosaur’s Massive Jaws" hidden="false" id="2ec5-c684-3e08-330b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a388-ae48-17aa-aa16"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8f4-6f34-47e4-9dcb"/>
+              </constraints>
+              <profiles>
+                <profile name="Carnosaur’s Massive Jaws" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false" id="3517-f3a6-9ce9-19a6">
+                  <characteristics>
+                    <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+                    <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+                    <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">2+</characteristic>
+                    <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">2</characteristic>
+                    <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">3</characteristic>
+                    <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f56-ea23-3236-c6f5"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69b8-a392-0d55-b06f"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
