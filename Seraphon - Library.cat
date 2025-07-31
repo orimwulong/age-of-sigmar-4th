@@ -4325,7 +4325,7 @@ Cover, Unstable**</description>
         <cost name="‎" id="6426-addf-dfa8-6a2d" hidden="false" typeId="1dd2-2af7-76a2-2423" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Saurus Warrior" hidden="false" id="6f05-98bf-ed5a-3f0f" defaultAmount="">
+        <selectionEntry type="model" import="true" name="Saurus Warrior" hidden="false" id="6f05-98bf-ed5a-3f0f">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ded7-c4e2-e1e6-a784"/>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="4168-e6a4-0fd6-4c8b"/>
@@ -4350,23 +4350,8 @@ Cover, Unstable**</description>
               </profiles>
             </selectionEntry>
           </selectionEntries>
-          <modifiers>
-            <modifier type="increment" value="5" field="ded7-c4e2-e1e6-a784">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="5" field="4168-e6a4-0fd6-4c8b">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="1b37-82b8-c062-eb82" shared="true" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="b52a-0d0d-8a42-92c6" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kroxigor (Spearhead)" hidden="false" id="33f0-a186-b2e6-a42c" publicationId="e9d0-a23-6a15-1fcb">
       <profiles>
@@ -4390,7 +4375,7 @@ Cover, Unstable**</description>
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Kroxigor" hidden="false" id="e156-99ae-4080-2aab" defaultAmount="" collective="false">
+        <selectionEntry type="model" import="true" name="Kroxigor" hidden="false" id="e156-99ae-4080-2aab" collective="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Drakebite Maul" hidden="false" id="0f35-3bac-9f51-b29e" defaultAmount="0,1">
               <profiles>
@@ -4412,17 +4397,14 @@ Cover, Unstable**</description>
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8638-063d-27f7-38f7-min" automatic="true"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8638-063d-27f7-38f7-max" automatic="true"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8638-063d-27f7-38f7-min" automatic="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8638-063d-27f7-38f7-max" automatic="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="INFANTRY" hidden="false" id="84a9-82df-8318-cb0c" targetId="75d6-6995-dfcc-3898" primary="true"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bd06-8c26-8ea2-1431" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Saurus Oldblood on Carnosaur (Spearhead)" hidden="false" id="b9e8-f89c-f528-453c" publicationId="e9d0-a23-6a15-1fcb">
       <categoryLinks>
@@ -4525,8 +4507,8 @@ Cover, Unstable**</description>
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f56-ea23-3236-c6f5"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69b8-a392-0d55-b06f"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c94c-224d-26d2-3125" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60e3-1385-c85b-f01c"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>

@@ -17,8 +17,22 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="376a-6b97-8699-dd59" shared="true" id="5354-4002-da52-2a99-min"/>
+        <constraint type="max" value="1" field="selections" scope="376a-6b97-8699-dd59" shared="true" id="5354-4002-da52-2a99-max"/>
+      </constraints>
     </entryLink>
-    <entryLink import="true" name="Saurus Warriors (Spearhead)" hidden="false" id="20e5-f808-03df-c42e" type="selectionEntry" targetId="0ef2-0b67-21f8-6fb1"/>
-    <entryLink import="true" name="Kroxigor (Spearhead)" hidden="false" id="d0cd-6fbd-4a0e-3a1a" type="selectionEntry" targetId="33f0-a186-b2e6-a42c"/>
+    <entryLink import="true" name="Saurus Warriors (Spearhead)" hidden="false" id="20e5-f808-03df-c42e" type="selectionEntry" targetId="0ef2-0b67-21f8-6fb1">
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="376a-6b97-8699-dd59" shared="true" id="4f02-b7df-5f44-e671"/>
+        <constraint type="max" value="2" field="selections" scope="376a-6b97-8699-dd59" shared="true" id="5b95-f0e4-eea0-a029"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Kroxigor (Spearhead)" hidden="false" id="d0cd-6fbd-4a0e-3a1a" type="selectionEntry" targetId="33f0-a186-b2e6-a42c">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="376a-6b97-8699-dd59" shared="true" id="f5e8-9ee9-255d-53dc"/>
+        <constraint type="max" value="1" field="selections" scope="376a-6b97-8699-dd59" shared="true" id="f7d6-ed32-913e-00bd"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
 </catalogue>
