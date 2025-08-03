@@ -35,4 +35,127 @@
       </constraints>
     </entryLink>
   </entryLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Battle Traits" hidden="false" id="06ea-be82-4723-80d5">
+      <profiles>
+        <profile name="Beast of the Dark Jungles" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="4cfa-b760-442a-8c98">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick your general to use this ability if they are in combat.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Pick 1 of the following:
+
+**^^Gargantuan Jaws^^**: Pick an enemy unit in combat with your general and roll a dice. If the roll exceeds that unit’s Health characteristic, 1 model in that unit is slain.
+
+**^^Roar^^**: Pick an enemy unit in combat with your
+general. Subtract D6 from that unit’s control score
+this turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Red</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Special</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="3360-1158-e879-9606" id="39ef-4af8-1ce9-c348" primary="true" name="Reference"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d7cf-1bbc-d65e-71d6" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="4226-3668-7e53-3dc3" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Regiment Abilities: Pick 1 of the following regiment abilities." hidden="false" id="78d3-82ba-ab59-6c4c">
+      <profiles>
+        <profile name="Predatory Fighters" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="e85d-660e-4c84-60e9">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Phase, End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Roll a dice for each enemy unit in combat with any friendly units.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 3+, inflict 1 mortal damage on the unit being rolled for.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Purple</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Offensive</attribute>
+          </attributes>
+        </profile>
+        <profile name="Temple-City Guardians" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="30cb-d625-c0a8-19a4">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Friendly units have **^^Ward (6+)^^** while they are wholly within friendly territory.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="50fe-4f29-6bc3-dcc6">Green</attribute>
+            <attribute name="Type" typeId="bf11-4e10-3ab1-06f4">Defensive</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="ac97-b27c-7e35-7ab9" id="74f9-9fc5-477d-b28e" primary="true" name="Army Composition"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="b27e-ea25-49e3-c5fc" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="425a-f803-d6d1-438c" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Enhancements: Give your general 1 of the following enhancements." hidden="false" id="3906-7f06-8041-7b02">
+      <profiles>
+        <profile name="Sotek&apos;s Gaze" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="7b00-da6b-b2fd-0eda">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"/>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. Add the roll to your general’s control score this turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Purple</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Control</attribute>
+          </attributes>
+        </profile>
+        <profile name="Ancient Strategist" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false" id="f4b8-97e2-f5d0-7737">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Enemy Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit wholly within 12&quot; of your general. You cannot pick your general.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">That unit can use the ‘Normal Move’ ability as if it were your movement phase.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"/>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="5a11-eab3-180c-ddf5">Gray</attribute>
+            <attribute name="Type" typeId="6d16-c86b-2698-85a4">Movement</attribute>
+          </attributes>
+        </profile>
+        <profile name="Blade of Realities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="207b-af53-8643-b5c5">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to the Rend characteristic of your general’s **^^Relic Celestite Weapon^^**.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="50fe-4f29-6bc3-dcc6">Red</attribute>
+            <attribute name="Type" typeId="bf11-4e10-3ab1-06f4">Offensive</attribute>
+          </attributes>
+        </profile>
+        <profile name="The Wrath of Chotec" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false" id="8d67-13c0-1c3e-571e">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"/>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">The Attacks characteristic of your general’s **^^Sunbolt Gauntlet^^** is 6 instead of D6.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Color" typeId="50fe-4f29-6bc3-dcc6">Blue</attribute>
+            <attribute name="Type" typeId="bf11-4e10-3ab1-06f4">Shooting</attribute>
+          </attributes>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="ac97-b27c-7e35-7ab9" id="03c5-840f-bc98-7898" primary="true" name="Army Composition"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="55d8-0d06-2ce2-c846" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="df2f-5e77-eae6-4e1f" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
