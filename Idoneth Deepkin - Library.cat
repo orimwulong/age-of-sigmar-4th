@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="d6ed-ac84-d78f-73e6" name="Idoneth Deepkin - Library" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="2" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="d6ed-ac84-d78f-73e6" name="Idoneth Deepkin - Library" gameSystemId="e51d-b1a3-75fc-dc3g" gameSystemRevision="2" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Lotann, Warden of the Soul Ledgers" hidden="false" id="50be-c90a-20c4-66ed" publicationId="9866-239b-07f0-d92b">
       <entryLinks>
@@ -53,7 +53,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink name="HERO" hidden="false" id="4c3e-4b66-cb68-51de" targetId="6e72-1656-d554-528a" primary="true"/>
-        <categoryLink name="WARD (5+)" hidden="false" id="25af-2909-8146-1646" targetId="52cc-95fd-6cd3-8f72" primary="false"/>
         <categoryLink name="IDONETH DEEPKIN" hidden="false" id="b72d-9e3f-bd55-773" targetId="c8fc-7a72-6665-2f34" primary="false"/>
         <categoryLink name="AELF" hidden="false" id="4e99-30a2-ddb7-5" targetId="5ef2-db09-d3cc-4b27" primary="false"/>
         <categoryLink name="UNIQUE" hidden="false" id="e8ca-1587-ca74-9b17" targetId="72ce-2188-70bf-2dbd" primary="false"/>
@@ -2406,9 +2405,6 @@ On a 4+:
         <categoryLink name="INFANTRY" hidden="false" id="fe70-e8e1-b824-8a76" targetId="75d6-6995-dfcc-3898" primary="false"/>
         <categoryLink name="AKHELIAN" hidden="false" id="7f7f-0869-0360-7cd1" targetId="108a-4ad6-bb90-a5ea" primary="false"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4b1a-68e4-be11-8106" includeChildSelections="true"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Ikon of the Sea" hidden="false" id="4c23-eeec-1852-7fae">
           <selectionEntries>
@@ -2604,9 +2600,6 @@ Friendly units that use a **^^Retreat^^** ability while they are wholly within 1
         <categoryLink name="INFANTRY" hidden="false" id="e432-0219-56f3-6dca" targetId="75d6-6995-dfcc-3898" primary="false"/>
         <categoryLink name="AKHELIAN" hidden="false" id="eecc-dc19-b853-3d85" targetId="108a-4ad6-bb90-a5ea" primary="false"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0eae-4c81-ef5a-9691" includeChildSelections="true"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Ikon of the Storm" hidden="false" id="c0dd-4ccf-b18a-d36c">
           <selectionEntries>
@@ -4020,7 +4013,7 @@ After resolving either effect, remove this unit&apos;s **Abyssal Cephalopod** fr
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="6e72-1656-d554-528a" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="6e42-3c75-4cb5-337a" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="c8fc-7a72-6665-2f34" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4252,7 +4245,7 @@ If this unit is a reinforced unit or a **^^Monster^^**, subtract 1 from hit roll
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="6e72-1656-d554-528a" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="6e42-3c75-4cb5-337a" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="c8fc-7a72-6665-2f34" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
